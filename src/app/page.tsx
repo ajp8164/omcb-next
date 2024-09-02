@@ -3,7 +3,7 @@
 import { Checkbox } from "./Checkbox";
 
 export default function Home() {
-  const count = process.env.COUNT || 1000;
+  const count = process.env.NEXT_PUBLIC_COUNT || 1000;
 
   return (
     <main className={'flex flex-row flex-wrap'}>
