@@ -3,7 +3,8 @@
 import { Checkbox } from "./Checkbox";
 
 export default function Home() {
-  const count = process.env.NEXT_PUBLIC_COUNT || 1000;
+  const count = Number(process.env.NEXT_PUBLIC_COUNT) || 1000;
+  console.log(`Starting with ${count}`);
 
   return (
     <main className={'flex flex-row flex-wrap'}>
